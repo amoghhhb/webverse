@@ -51,5 +51,27 @@ body {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   }
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom, #1f1f1f, #2d697e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .red {
+      color: red;
+    }

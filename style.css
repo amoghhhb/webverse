@@ -1,40 +1,86 @@
+/* Keyframes for text fade-in */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    height: 100vh;
-    background: linear-gradient(to bottom, #1f1f1f, #2d697e);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    flex-direction: column;
-  }
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #1f1f1f, #2d697e);
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.5;
-  }
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+}
 
-  .start-btn {
-    margin-top: 30px;
-    padding: 12px 32px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    background: linear-gradient(to right, #ff6a00, #ee0979);
-    transition: transform 0.2s;
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
 
-  .start-btn:hover {
-    transform: scale(1.05);
-  }
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, opacity 0.3s ease; /* smooth fade on hover */
+}
+
+.navbar ul li a:hover {
+  color: #ff4c4c;
+  opacity: 0.7; /* optional: adds a fading effect */
+}
+
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 100px;
+  line-height: 1.5;
+}
+
+/* Start Button */
+.start-btn {
+  margin-top: 30px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  transition: transform 0.2s;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+}
